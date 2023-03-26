@@ -1,6 +1,9 @@
 .octahedron{
   position: absolute;
+  top:0vh;
+  left:0vw;
   display: flex;
+  height: 103vh !important;
   justify-content: center;
   z-index: 0;
 }
