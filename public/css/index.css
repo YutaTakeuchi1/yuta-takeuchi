@@ -1,6 +1,7 @@
 .text-anim{
   color:aqua;
   text-shadow: 1px 1px 0px crimson;
+  opacity:0.5;
 }
 
 .octahedron{
