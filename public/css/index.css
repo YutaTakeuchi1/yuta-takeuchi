@@ -1,7 +1,6 @@
 .text-anim{
-  background: linear-gradient(to right, hsl(0, 100%, var(--brightness)), hsl(30, 100%, var(--brightness)), hsl(60, 100%, var(--brightness)), hsl(120, 100%, var(--brightness)), hsl(240, 100%, var(--brightness)), hsl(270, 100%, var(--brightness)), hsl(300, 100%, var(--brightness)));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:aqua;
+  text-shadow: 1px 1px 0px crimson;
 }
 
 .octahedron{
@@ -66,7 +65,7 @@
   .title-box{
     position: absolute;
     margin-top:187px;
-    margin-left:584px;
+    margin-left:600px;
     text-align: center;
     font-size: 2.5em;
     font-family: 'AngelicAlchemy';
