@@ -13,8 +13,8 @@
 @media screen and (max-width: 576px) {
   .title-box{
     position: absolute;
-    margin-top:212px;
-    margin: left 155px;
+    margin-top:210px;
+    margin-left: 155px;
     text-align: center;
     font-size: 2em;
     font-family: 'AngelicAlchemy';
