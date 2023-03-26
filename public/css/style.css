@@ -1,0 +1,12 @@
+:root {
+  --brightness: 75%;
+}
+
+@font-face {
+	font-family: 'AngelicAlchemy';
+	src: url('../fonts/AngelicAlchemy/AngelicAlchemy.ttf') format('truetype');
+}
+
+body{
+  height: 100vh;
+}
