@@ -37,7 +37,7 @@ window.onload = () => {
     let renderer = new THREE.WebGLRenderer({ canvas: canvas });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setClearColor(0xffffff);
+    renderer.setClearColor(0x000000);
 
     if (window.innerWidth < 768) {
       camera.position.z = 10;

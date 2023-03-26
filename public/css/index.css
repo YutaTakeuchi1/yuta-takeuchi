@@ -1,88 +1,66 @@
-.text-anim{
-  color:aqua;
-  text-shadow: 1px 1px 0px crimson;
-  opacity:0.5;
-}
-
 .octahedron{
   position: absolute;
+  display: flex;
+  justify-content: center;
   z-index: 0;
+}
+
+.title-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'AngelicAlchemy';
+  z-index: 1;
+  padding-left: 2vw;;
+}
+
+.text-anim{
+  color:violet;
+  opacity:0.9;
+  text-align: center;
+  margin-top:25px;
 }
 
 /* スマホ縦画面 */
 @media screen and (max-width: 576px) {
-  .title-box{
-    position: absolute;
-    margin-top:210px;
-    margin-left: 155px;
-    text-align: center;
-    font-size: 2em;
-    font-family: 'AngelicAlchemy';
-    z-index: 1;
+  .title-box__text-size{
+    font-size: 1.3em;
   }
 }
 
-/* タブレット画面 */
+/* タブレット画面(スマホファースト), 小さいスマホの横画面 */
 @media screen and (min-width: 576px) and (max-width: 850px) {
-  .title-box{
-    position: absolute;
-    margin-top:358px;
-    margin-left:318px;
-    text-align: center;
-    font-size: 3.5em;
-    font-family: 'AngelicAlchemy';
-    z-index: 1;
+  .title-box__text-size{
+    font-size: 1.5em;
   }
 }
 
 /* スマホ横画面*/
 @media screen and (min-width: 850px) and (max-width: 1000px) {
-  .title-box{
-    position: absolute;
-    margin-top:50px;
-    margin-left:406px;
-    text-align: center;
+  .title-box__text-size{
     font-size: 2em;
-    font-family: 'AngelicAlchemy';
-    z-index: 1;
   }
 }
 
 /* タブレット横画面*/
 @media screen and (min-width: 1000px) and (max-width: 1300px) {
-  .title-box{
-    position: absolute;
-    margin-top:93px;
-    margin-left:568px;
-    text-align: center;
-    font-size: 3.5em;
-    font-family: 'AngelicAlchemy';
-    z-index: 1;
+  .title-box__text-size{
+    font-size: 2.5em;
   }
 }
 
 /* PC画面 */
 @media screen and (min-width: 1300px) and (max-width: 1800px) {
-  .title-box{
-    position: absolute;
-    margin-top:187px;
-    margin-left:600px;
-    text-align: center;
-    font-size: 2.5em;
-    font-family: 'AngelicAlchemy';
-    z-index: 1;
+  .title-box__text-size{
+    font-size: 3em;
   }
 }
 
 /* PC全画面 */
 @media screen and (min-width: 1800px) {
-  .title-box{
-    position: absolute;
-    margin-top:200px;
-    margin-left:867px;
-    text-align: center;
+  .title-box__text-size{
     font-size: 3.5em;
-    font-family: 'AngelicAlchemy';
-    z-index: 1;
   }
 }
