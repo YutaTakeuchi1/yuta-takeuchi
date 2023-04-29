@@ -1,12 +1,3 @@
-:root {
-  --brightness: 75%;
-}
-
-@font-face {
-	font-family: 'Starway_font';
-	src: url('../fonts/Starway_font/Starway.otf') format('truetype');
-}
-
 body{
   height: 100vh;
 }

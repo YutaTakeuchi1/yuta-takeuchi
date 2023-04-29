@@ -1,0 +1,9 @@
+:root {
+  --brightness: 75%;
+  --title_text-color:violet; 
+}
+
+@font-face {
+	font-family: 'Starway_font';
+	src: url('../fonts/Starway_font/Starway.otf') format('truetype');
+}
