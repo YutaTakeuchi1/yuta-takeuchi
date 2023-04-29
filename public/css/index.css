@@ -36,6 +36,10 @@
   0 0 10rem var(--title_text-color);
 }
 
+.text-anim:hover{
+  text-shadow: none;
+}
+
 /* スマホ縦画面 */
 @media screen and (max-width: 576px) {
   .title-box__text-size{
@@ -62,9 +66,6 @@
   .title-box__text-size{
     font-size: 2.5rem;
   }
-  .text-anim:hover{
-    font-size: 2.4rem;;
-  }
 }
 
 /* PC画面 */
@@ -72,17 +73,11 @@
   .title-box__text-size{
     font-size: 3rem;
   }
-  .text-anim:hover{
-    font-size: 2.9rem;;
-  }
 }
 
 /* PC全画面 */
 @media screen and (min-width: 1800px) {
   .title-box__text-size{
     font-size: 3.5rem;
-  }
-  .text-anim:hover{
-    font-size: 3.4rem;;
   }
 }
