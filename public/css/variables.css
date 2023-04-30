@@ -1,6 +1,7 @@
 :root {
   --brightness: 75%;
   --title_text-color:violet; 
+  --color-octa: #17E6E6;
 }
 
 @font-face {

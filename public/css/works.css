@@ -1,0 +1,5 @@
+.border-octa{
+  border-color: var(--color-octa);
+  box-shadow:-0.2rem -0.2rem 1rem var(--color-octa),
+  0.2rem 0.2rem 1rem var(--color-octa);
+}

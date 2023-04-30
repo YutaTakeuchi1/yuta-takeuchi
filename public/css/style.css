@@ -1,7 +1,202 @@
 body{
   height: 100vh;
+  background-color: #000000;
 }
 
 a{
   text-decoration: none;
+}
+
+.octahedron{
+  position: absolute;
+  top:0vh;
+  left:0vw;
+  display: flex;
+  height: 103vh !important;
+  width:100vw !important;
+  justify-content: center;
+  z-index: 0;
+}
+
+.link-text-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100vh;
+  font-family: 'Starway_font';
+  z-index: 1;
+  margin-top: 1rem;
+  margin-right:0.1rem;
+  margin-left:2%;
+}
+
+.text-anim{
+  color:var(--title_text-color);
+  opacity:0.9;
+  text-align: center;
+  margin-top:25px;
+  text-shadow: -0.2rem -0.2rem 1rem #fff,
+  0.2rem 0.2rem 1rem #fff,
+  0 0 2rem var(--title_text-color),
+  0 0 4rem var(--title_text-color),
+  0 0 6rem var(--title_text-color),
+  0 0 8rem var(--title_text-color),
+  0 0 10rem var(--title_text-color);
+}
+
+.text-anim:hover{
+  text-shadow: none;
+}
+
+.text-color-octa{
+  color:var(--color-octa);
+}
+
+/* スクロール促す矢印 */
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: fixed;
+  bottom: 15px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.arrows-pos {
+  left: 48%;
+}
+
+.arrows path {
+  stroke: var(--color-octa);
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s;
+}
+
+/* スクロール促す矢印 */
+
+/* ページトップに戻る矢印 */
+/* ボタンのスタイル */
+.page-top {
+  /* buttonタグのリセットCSS */
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+
+  /* ボタンの装飾 */
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-octa);
+  box-shadow:-0.2rem -0.2rem 1rem var(--color-octa),
+  0.2rem 0.2rem 1rem var(--color-octa);
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* 矢印のスタイル */
+.page-top::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-bottom: -6px;
+  border-top: solid 3px #ffffff;
+  border-right: solid 3px #ffffff;
+  transform: rotate(-45deg);
+}
+
+/* ホバー時のスタイル */
+.page-top:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ページトップに戻る矢印 */
+
+/* スマホ縦画面 */
+@media screen and (max-width: 576px) {
+  .link-text-box__text-size{
+    font-size: 1.3em;
+  }
+  .arrows-pos {
+    left: 40%;
+  }
+}
+
+/* タブレット画面(スマホファースト), 小さいスマホの横画面 */
+@media screen and (min-width: 576px) and (max-width: 850px) {
+  .link-text-box__text-size{
+    font-size: 1.5rem;
+  }
+}
+
+/* スマホ横画面*/
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+  .link-text-box__text-size{
+    font-size: 2rem;
+  }
+}
+
+/* タブレット横画面*/
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .link-text-box__text-size{
+    font-size: 2.5rem;
+  }
+}
+
+/* PC画面 */
+@media screen and (min-width: 1300px) and (max-width: 1800px) {
+  .link-text-box__text-size{
+    font-size: 3rem;
+  }
+}
+
+/* PC全画面 */
+@media screen and (min-width: 1800px) {
+  .link-text-box__text-size{
+    font-size: 3.5rem;
+  }
 }

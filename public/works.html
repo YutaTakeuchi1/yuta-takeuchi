@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yuta Takeuchi's Portforio Site</title>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <link href="lib/textillate/assets/animate.css" rel="stylesheet">
+  <script src="lib/textillate/assets/jquery.lettering.js"></script>
+  <script src="lib/textillate/jquery.textillate.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="js/text-anim.js"></script>
+
+  <link href="css/variables.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/works.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/three@0.142.0/build/three.min.js"></script>
+  <script src="js/octahedron.js"></script>
+
+  <script src="js/scroll.js"></script>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <canvas class="octahedron"></canvas>
+  <div class="link-text-box link-text-box__text-size">
+    <a href="./index.html" class="text-anim">Home</p></a>
+    <a href=""><p class="text-anim">Works</p></a>
+  </div>
+
+  <svg class="arrows arrows-pos" id="arrows" onclick="scrollToBottom()">
+    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+  </svg>
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded border-2 border-octa" alt="hero" src="images/portforio_site.png">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-color-octa">ポートフォリオサイト</h1>
+        <p class="mb-8 leading-relaxed text-white">「光」「スタイリッシュさ」を表現しつつ、少しネオンっぽいデザインを取り入れてみました。</p>
+      </div>
+    </div>
+  </section>
+
+  <button id="page-top" class="page-top" onclick="scrollToTop()"></button>
+</body>
+</html>
