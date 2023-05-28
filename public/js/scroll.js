@@ -5,13 +5,11 @@ function scrollToBottom(posScholar) {
   // 最下部の位置を取得
   const pos = window.pageYOffset + window.innerHeight;
 
+  window.scrollTo({ top: pos, behavior: 'smooth' });
+
   if(0 >= document.documentElement.scrollHeight - pos){
-    window.scrollTo({ top: pos, behavior: 'smooth' });
+    //スクロールしてページ最下部へ到達したとき、自動スクロール非表示
     downArrow.style.display="none";
-    console.log("ページの最下部にスクロールされました自動");
-  }
-  else{
-    window.scrollTo({ top: pos, behavior: 'smooth' });
   }
 }
 
@@ -22,15 +20,16 @@ window.addEventListener('scroll', function() {
   // 最下部の位置を取得
   const pos = window.pageYOffset + window.innerHeight;
   if (0 >= document.documentElement.scrollHeight - pos) {
-    // ページの最下部にスクロールされた場合の処理をここに記述します
-    console.log("ページの最下部にスクロールされました手動");
+    //スクロールしてページ最下部へ到達したとき、自動スクロール非表示
     downArrow.style.display="none";
   }
   else{
+    //ページ最下部から上にスクロールしたとき、下へ移動する自動スクロール復活
     downArrow.style.display="block";
   }
 });
 
+//ページ最上部へ移動
 function scrollToTop() {
   let downArrow=document.getElementById("arrows");
   window.scrollTo({ top: 0, behavior: 'smooth' });
